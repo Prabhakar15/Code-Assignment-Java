@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+<script type="text/javascript">
+
+function validateForm(){	
+	if (document.f1.animalNames.value==""){
+		alert ("Please select Animal Name");
+		return false;
+	}
+}
+</script>
+<body>
+<form name="f1">
+	<p>
+	<select name="animalNames" multiple size="14">
+	<option value="Cat">Cat</option>
+	<option value="Dog">Dog</option>	
+	<option value="Bird">Bird</option>
+	<option value="Duck">Duck</option>
+	<option value="Chicken">Chicken</option>
+	<option value="Rooster">Rooster</option>	
+	<option value="Fish">Fish</option>
+	<option value="Parrot">Parrot</option>
+	<option value="Shark">Shark</option>
+	<option value="Clownfish">Clownfish</option>	
+	<option value="Dolphin">Dolphin</option>
+	<option value="Frog">Frog</option>
+	<option value="Butterfly">Butterfly</option>	
+	</select>
+	
+	<button  type="submit" formaction="/animal/getFlyingAnimal" onClick="return validateForm()">getFlyingAnimal</button>
+	<button  type="submit" formaction="/animal/getWalkingAnimal" onClick="return validateForm()">getWalkingAnimal</button>
+	<button  type="submit" formaction="/animal/getSpeakingAnimal" onClick="return validateForm()">getSpeakingAnimal</button>
+	<button  type="submit" formaction="/animal/getSwimingAnimal" onClick="return validateForm()">getSwimingAnimal</button>
+	</p>
+</form>
+
+</form>
+</body>
+</html>
